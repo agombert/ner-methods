@@ -10,7 +10,7 @@ The distillation phase is a bit different from the [texcat algorithm](https://gi
 
 The dataset I used for this experiment was created from scratch. I cannot provide the datasets (I give only a tiny sample to highlights the results) I used as I scrapped some data on [eBay](www.ebay.com). I scrapped it with [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#) and managed to create a dataset around car adds on eBay. From that I decided to try to focus on the car make, the model / submodel of the car, and some characteristics of the car when available. 
 
-I trained my model on this dataset nevertheless, you can use this code to perform you own NER with any dataset in `data/` where the `text_train.npy` and `text_test.npy` are arrays of text and `labels_train.py` and `labels_test.npy` are arrays of label (with as many label as you want). To perform this go directly to the [*spaCy textcat implementation*](https://github.com/agombert/ner-methods/blob/master/README.md#spacy-ner-implementation).
+I trained my model on this dataset nevertheless, you can use this code to perform you own NER with any dataset in `data/` where the `text_train.npy` and `text_test.npy` are arrays of text and `labels_train.py` and `labels_test.npy` are arrays of label (with as many label as you want). To perform this go directly to the [*spaCy NER implementation*](https://github.com/agombert/ner-methods/blob/master/README.md#spacy-ner-implementation).
 
 ## Main results
 
