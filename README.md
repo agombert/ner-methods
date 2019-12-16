@@ -22,17 +22,17 @@ I computed the macro recall / macro precision for each model.
 
 |      Model     | Recall | Precision | Model Size|
 |:--------------:|:------:|:---------:|:---------:|
-| *spaCy Imp*    | 47.45% |   52.38%  |   5.3Mb   |
-|*BERT FineTuned*| 58.03% |   61.15%  |   1.2Gb   |
-|*Distilled BERT*| 51.85% |   53.29%  |   6.2MB   | 
+| *spaCy Imp*    | % |   %  |   b   |
+|*BERT FineTuned*| % |   %  |   Gb   |
+|*Distilled BERT*| % |   %  |   B   | 
 
 I also computed the recall/precision for each label. 
 
 |      Model     |   Car Make  |  Car Model  |
 |:--------------:|:-----------:|:-----------:|
-|*spaCy Imp*     |58.30%/35.55%|35.50%/39.10%|
-|*BERT FineTuned*|65.40%/80.54%|55.60%/49.12%|
-|*Distilled BERT*|46.40%/39.36%|43.20%/43.03%|
+|*spaCy Imp*     |-%/-%|-%/-%|
+|*BERT FineTuned*|-%/-%|-%/-%|
+|*Distilled BERT*|-%/-%|-%/-%|
 
 ## Data
 
@@ -40,7 +40,7 @@ Here I provide an example of the add we want to extract the info from. I use [do
 
 ![alt text](https://raw.githubusercontent.com/agombert/ner-methods/master/img/example.png)
 
-## spaCy textcat implementation
+## spaCy NER implementation
 
 <!--When you have your dataset with the texts and labels you can use `run_textcat.py` to make the classification and save your model.-->
 
@@ -73,7 +73,7 @@ python3 run_textcat.py --is predict True
 
 <!--And you'll get the evaluations in logs. -->
 
-## BERT textcat implementation (with google Colab)
+## BERT NER implementation (with google Colab)
 
 <!--For this part I used google colab, as it's really cool to get free GPU access and perform BERT fine tuning on small datasets. I used the code from this [colab](https://colab.research.google.com/github/google-research/bert/blob/master/predicting_movie_reviews_with_bert_on_tf_hub.ipynb#scrollTo=dsBo6RCtQmwx) which uses BERT to review movies. I aranged a bit the code to adapt it to my problem. -->
 
